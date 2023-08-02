@@ -4,7 +4,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 
 function ApiFetching({ userData, fetchUsers }) {
-  const fetchReq=useReducer((state)=>state?.fetch.users)
+  const fetchReq=useReducer((state)=>state?.fetch?.users)
   const dispatch=useDispatch()
   useEffect(() => {
     dispatch(fetchUsers())
@@ -14,7 +14,7 @@ function ApiFetching({ userData, fetchUsers }) {
     <div>
       {
         fetchReq.map((e)=>(
-          <h1>e.name</h1>
+          <h1>{e.name}</h1>
         ))
       }
     </div>
