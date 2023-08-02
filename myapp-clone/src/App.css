@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+body{
+  background-color: rgb(42,57,66);
+  color: white;
+}
+.App-header {
+  background-color: #454546;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+#navLeft{
+  width: 20dvw;
+  display: flex;
+  justify-content: space-evenly;
+}
+#navRight{
+  width: 30dvw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main{
+  height: 90dvh;
+  background-color: #282c34;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.main-aside{
+  background-color: #5e5e5e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.main-body{
+  background-color: #282c34;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.cards{
+  background-color: rgb(117, 117, 143);
+  margin: 15px;
+  display: grid;
+  place-items: center;
+}
+.img{
+  border-radius: 25px;
+  height: 230px;
+}
+.form{
+  height: 85dvh;
+  background-color: rgb(105, 104, 104);
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 10px;
+}
+input{
+  height: 3%;
+  /* margin-top: 30px; */
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+footer{
+  background-color: grey;
+  height: 20dvh;
+}
+.bg{
+  display: grid;
+  place-content: center;
+}
+
+.star-rating {
+  font-size: 24px;
+}
+
+.star {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.hovered {
+  color: orange;
+}
+
+.selected {
+  color: orange;
+}
+
+select{
+  height:30px;
+  width:120px;
+}
