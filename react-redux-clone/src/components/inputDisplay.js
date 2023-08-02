@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { editToArr ,addToArr , updateData } from "../redux/inputAction";
+import { useState } from "react";
 
 export function InputDisplay() {
   //   const dataArr = useSelector((state) => state.obj.arr);
@@ -14,15 +15,24 @@ export function InputDisplay() {
     dispatch(editToArr(delitedData));
   }
 
-  const clickEdit = (e) => {
-    console.log(e.firstname);
-    console.log(e.age);
-    // const obj = {
-    //   firstname: "updated",
-    //   age: 100,
-    // };
-    // dispatch(updateData(obj));
+  const [formUpData, setFormUpData] = useState({
+    firstname: "",
+    age: "",
+  });
+
+  const textchange1 = (e) => {
+    const { name, value } = e.target;
+    setFormUpData({ ...formUpData, [name]: value });
   };
+    const clickEdit = (index) => {
+      console.log(updateData);
+      const newData = [...data];
+      newData[index] = formUpData;
+      dispatch(updateData(newData));
+      console.log(newData[index]);
+      const dataEmpty = { firstname: "", age: "" };
+      setFormUpData(dataEmpty);
+    };
 
   return (
     <div>
@@ -31,7 +41,23 @@ export function InputDisplay() {
           <h1>{e.firstname}</h1>
           <h1>{e.age}</h1>
           <button onClick={() => clickToDelete(index)}>Delete</button>
-          <button onClick={() => clickEdit(e)}>Update</button>
+          <div>
+          <input
+          name="firstname"
+          value={formUpData.firstname}
+          type="text"
+          placeholder="enter name"
+          onChange={textchange1}
+        ></input>
+        <input
+          name="age"
+          value={formUpData.age}
+          type="number"
+          placeholder="enter age"
+          onChange={textchange1}
+        ></input>
+        </div>
+          <button onClick={() => clickEdit(index)}>Update</button>
         </div>
       ))}
     </div>

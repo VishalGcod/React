@@ -1,11 +1,22 @@
-import React from 'react'
+import { fetchUsers } from "../redux/inputAction";
+import { useEffect, useReducer } from "react";
+import React from "react";
+import { useDispatch } from "react-redux";
 
-function ApiFetching() {
-    console.log();
+function ApiFetching({ userData, fetchUsers }) {
+  const fetchReq=useReducer((state)=>state?.fetch.users)
+  const dispatch=useDispatch()
+  useEffect(() => {
+    dispatch(fetchUsers())
+  }, []);
+
   return (
     <div>
-        <h1>Hello</h1>
-
+      {
+        fetchReq.map((e)=>(
+          <h1>e.name</h1>
+        ))
+      }
     </div>
   )
 }
