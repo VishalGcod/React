@@ -1,4 +1,3 @@
-
 export const ADD_INPUT = "ADD_INPUT";
 export const ARRAY_DATA = "ARRAY_DATA";
 export const EDIT_ARRAY = "EDIT_ARRAY";
