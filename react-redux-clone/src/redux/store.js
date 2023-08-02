@@ -7,4 +7,4 @@ import { thunk } from 'react-redux';
 
 
 
-export const store = createStore(rootReducer, applyMiddleware(thunk));
+export const store = createStore(rootReducer, applyMiddleware(logger,thunk));

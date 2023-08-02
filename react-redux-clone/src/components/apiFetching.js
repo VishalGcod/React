@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 
 function ApiFetching({ userData, fetchUsers }) {
   const fetchReq=useReducer((state)=>state?.fetch?.users)
+  const fetchSucc=useReducer((state)=>state.fetch?.users)
   const dispatch=useDispatch()
   useEffect(() => {
     dispatch(fetchUsers())
