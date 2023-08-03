@@ -3,7 +3,8 @@ export const ADD_INPUT = "ADD_INPUT";
 export const ARRAY_DATA = "ARRAY_DATA";
 export const EDIT_ARRAY = "EDIT_ARRAY";
 export const UPDATE_DATA = "UPDATE_DATA";
-
+ 
+import axios from 'axios';
 export const FETCH_USER_REQUEST='FETCH_USER_REQUEST'
 export const FETCH_USER_SUCCESS='FETCH_USER_SUCCESS'
 export const FETCH_USER_FAILURE='FETCH_USER_FAILURE'

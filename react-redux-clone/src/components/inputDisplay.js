@@ -3,6 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { editToArr ,addToArr , updateData } from "../redux/inputAction";
 import { useState } from "react";
 
+import axios from 'axios';
+
+
 export function InputDisplay() {
   //   const dataArr = useSelector((state) => state.obj.arr);
   const data = useSelector((state) => state.obj.arr);
