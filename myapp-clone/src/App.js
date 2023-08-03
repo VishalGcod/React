@@ -15,6 +15,7 @@ import { Buyproduct, Login, About, NavTxt } from "./routecomp";
 import { LifecycleA } from "./LifecycleA";
 import NotFound from "./routecomp";
 import { useState } from "react";
+import { thunk } from "redux-thunk";
 
 function App() {
     const [cartitem, setcartitems] = useState([]);
@@ -38,7 +39,7 @@ function App() {
           <Route component={NotFound} />
         </Switch> 
       </Router> */}
-      {/* <Disp/> */}
+      <Disp/>
       {/* <Par/>  */}
       {/* <Formdta/> */}
       {/* <Header/> */}
