@@ -1,0 +1,60 @@
+{
+  "Heros": [
+    {
+      "id": 1,
+      "title": "Naruto",
+      "otherName": "Child of Prophecy",
+      "image": "https://wallpaperaccess.com/full/2866246.jpg",
+      "price": 7500
+    },
+    {
+      "id": 2,
+      "title": "Kakashi Hatake",
+      "otherName": "Copy Ninja",
+      "image": "https://cdn.wallpapersafari.com/38/83/EhbUW8.jpg",
+      "price": 5000
+    },
+    {
+      "id": 3,
+      "title": "Sasuke",
+      "otherName": "Uchiha",
+      "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/08/Featured-Hated-Loved-Sasuke-Uchiha.jpg",
+      "price": 6000
+    },
+    {
+      "id": 4,
+      "title": "Itachi",
+      "otherName": "Uchiha",
+      "image": "https://staticg.sportskeeda.com/editor/2022/05/c9fe0-16537352327021-1920.jpg",
+      "price": 5500
+    },
+    {
+      "id": 6,
+      "title": "Minato",
+      "otherName": "Yellow Flash",
+      "image": "https://www.hindustantimes.com/ht-img/img/2023/06/28/1600x900/Minato_Namikaze_1677422619649_1687972121553.jpg",
+      "price": 6500
+    },
+    {
+      "title": "jiraya",
+      "image": "https://www.fredzone.org/wp-content/uploads/2022/01/Naruto_La_posture_de_Jiraya.png",
+      "otherName": "Legendary Sannin",
+      "id": 8,
+      "price": 5500
+    },
+    {
+      "title": "obito",
+      "image": "https://moewalls.com/wp-content/uploads/2022/11/obito-uchiha-rinnegan-mask-thumb.jpg",
+      "otherName": "uchicha",
+      "id": 9,
+      "price": 7000
+    },
+    {
+      "title": "Madara",
+      "image": "https://dthezntil550i.cloudfront.net/zx/latest/zx2106050013051240018364764/e919c28e-d4f3-46d5-afb4-c5b3db43d2f1.jpg",
+      "otherName": "Ghost of the Uchicha",
+      "id": 10,
+      "price": 9000
+    }
+  ]
+}

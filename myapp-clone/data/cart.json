@@ -1,0 +1,22 @@
+{
+  "cart": [
+    {
+      "id": 1,
+      "title": "Naruto",
+      "otherName": "Child of Prophecy",
+      "image": "https://wallpaperaccess.com/full/2866246.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Itachi",
+      "otherName": "Uchiha",
+      "image": "https://staticg.sportskeeda.com/editor/2022/05/c9fe0-16537352327021-1920.jpg"
+    },
+    {
+      "title": "obito",
+      "image": "https://moewalls.com/wp-content/uploads/2022/11/obito-uchiha-rinnegan-mask-thumb.jpg",
+      "otherName": "uchicha",
+      "id": 9
+    }
+  ]
+}
